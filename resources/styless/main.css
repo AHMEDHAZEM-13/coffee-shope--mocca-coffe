@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     color: #fff; 
+    border: none;
+    text-decoration: none;
+     outline: none;
+    scroll-behavior: smooth; 
+    font-family: "Poppins", sans-serif
+}
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar{
+    width: .8;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+      background: #D1B75C;  
+}
+/* home page */
+.section{
+    padding: 2rem 7%;
+}
+/* home page */
+.header{
+    display: flex;
+    background: #141414; 
+    align-items: center;
+    justify-content: space-between;
+    top: 0;left: 0;right: 0;
+    padding: 1.5rem 7%;
+    position: fixed;
+    border-bottom: #141414;
+    z-index: 1000;
+
+}
+.header .logo img{
+    height: 6rem;
+    border-radius: 1.5rem;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.header .navbar a:hover{
+    color: #D1B75C;
+}
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: #212121;
+    align-items: center;
+    padding: 8px;
+}
+.header .icons div:hover{
+    color: #D1B75C;  
+}
+#menu-btn{
+    display: none;
+}
+.header .search-from{
+    position: absolute;
+    background: #212121;
+    display: flex;
+    top: 110%; right: 6%;
+    width: 50rem;
+    height: 3rem;
+    align-items: center;
+    border: 40px solid #141414;
+     transform: scaleY(0);
+    transform-origin: top; 
+}
+.header .search-from .active{
+    transform: scaleY(1);
+
+}
+.header .search-from input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: #fff;
+    font-size: 14px;
+    text-transform: none;
+    background: #212121;
+
+}
+.header .search-from input label{
+    cursor: pointer;
+    margin-right: 1.5rem;
+    color: #212121;
+    
+    font-size: 14px;
+
+}
+/* .header .search-from input label:hover{
+    background: #D1B75C;
+} */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../assets/images/Screenshot_4.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: cover 6s 2s infinite;
+}
+
+
+@keyframes cover {
+    0% { background-image: url('../assets/images/Screenshot_4.png'); }
+    50% { background-color:rgba(0, 0, 0, 0.5); }
+    51% {     background-image: url('../assets/images/Screenshot_5.png'); }
+    100% { background-color:rgba(0, 0, 0, 1); }
+}
+.home .content {
+    width: 60rem;
+    
+}
+.home .content h4 {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 3rem;
+    font-family: "Meddon", cursive;
+    font-weight: 400;
+}
+.home .content p {
+    font-size:60px ;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+.home .content span {
+    font-size:60px ;
+    color: #D1B75C;
+    font-weight: 600;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+.home .content h1 {
+    font-size:60px ;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+.home .content .button a{
+    font-size:18px ;
+    color: #fff;
+    font-weight: 600;
+    padding:1rem 3rem;
+    line-height: 5rem;
+    border: 1px solid  #D1B75C;
+    justify-content: center;
+    margin: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 12px;
+    }
+    .header{
+        padding: 1rem 2rem;
+    }
+    .section{
+        padding: 2rem ;
+    }
+}
+@media (max-width:768px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;right: -100%;
+        background: #212121;
+        width: 15rem;
+        height: calc((100vh - 9.5rem));
+    }
+    .header .navbar a{
+        color: #fff;
+        display: block;
+        padding: .5rem;
+        margin: 1.5rem;
+        font-size: 12px;
+    }
+    .header .search-from{
+        width: 90%;
+        right: 2rem;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 10px;
+    }
+    .header{
+        padding: 1rem 2rem;
+    }
+}
